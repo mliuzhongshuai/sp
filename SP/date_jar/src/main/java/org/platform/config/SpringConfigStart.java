@@ -15,6 +15,6 @@ public class SpringConfigStart {
      */
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring/spring_mybatis.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("META-INF/spring/spring_mybatis.xml");
     }
 }

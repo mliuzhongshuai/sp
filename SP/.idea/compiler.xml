@@ -23,12 +23,16 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="date_jar" />
+        <module name="sp_entity" />
+        <module name="sp_service" />
         <module name="web_model" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="date_jar" target="1.5" />
       <module name="SP" target="1.5" />
+      <module name="sp_entity" target="1.5" />
+      <module name="sp_service" target="1.5" />
       <module name="web_model" target="1.5" />
     </bytecodeTargetLevel>
   </component>

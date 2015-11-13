@@ -11,6 +11,8 @@
     <modules>
         <module>date_jar</module>
         <module>web_model</module>
+        <module>sp_entity</module>
+        <module>sp_service</module>
     </modules>
 
 
