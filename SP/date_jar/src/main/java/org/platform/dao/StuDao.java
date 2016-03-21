@@ -1,23 +1,18 @@
 package org.platform.dao;
 
-import org.platform.common.CommonDao;
-import org.platform.entity.Stu;
-import org.springframework.stereotype.Repository;
+import java.util.Map;
 
 /**
  * Created by liuzhongshuai on 15/11/11.
  */
-@Repository
-public class StuDao extends CommonDao {
+public interface StuDao {
 
-    private String mapId="org.platform.mapping.student";
+    String mapId="org.platform.dao.StuDao";
 
 
     /**
      * 保存学生信息
-     * @param stu
+     * @param map
      */
-    public void saveStu(Stu stu){
-        this.sqlSession.insert(mapId+"saveStu",stu);
-    }
+    void saveStu(Map<String,String> map);
 }
