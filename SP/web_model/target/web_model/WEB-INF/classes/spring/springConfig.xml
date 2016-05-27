@@ -9,8 +9,12 @@
 
        <dubbo:application name="consumer-app" />
        <!--dubbo服务注册中心（zooKeeper支持）-->
-       <dubbo:registry address="zookeeper://115.28.246.163" port="2181" />
+       <dubbo:registry address="zookeeper://192.168.1.109" port="2181" check="true"/>
 
        <dubbo:reference id="heheda" interface="org.platform.service.StuService" />
+
+
+       <!--加入自动加密切面-->
+       <bean id="encryptHandler" class="org.platform.helper.EncryptHandler"></bean>
 
 </beans>

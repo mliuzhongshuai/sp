@@ -1,10 +1,12 @@
 package org.platform.web.stu;
 
 import org.platform.service.StuService;
+import org.platform.service.stu.StuServicee;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.*;
+import java.lang.ref.SoftReference;
 import java.nio.ByteBuffer;
 import java.nio.channels.Channel;
 import java.nio.channels.FileChannel;
@@ -19,15 +21,22 @@ public class Test {
 
 
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, InterruptedException {
-        /*ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring/springConfig.xml");
-        StuService stuService =applicationContext.getBean("heheda", StuService.class);
 
-        Map<String, String> stu = new HashMap<String, String>();
+
+
+
+
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring/springConfig.xml");
+        StuServicee stuService =applicationContext.getBean("stuServicee", StuServicee.class);
+
+        stuService.getInfo("加密前");
+
+        /*Map<String, String> stu = new HashMap<String, String>();
         stu.put("id", "asdf12341234111");
         stu.put("name", "asdf1");
         stu.put("age", "23rrrrr1");
-        stuService.saveStu(stu);*/
-        hhda();
+        stuService.saveStu(stu);
+        hhda();*/
 
 
 
